@@ -79,28 +79,19 @@ header nav ul li a {
 
 }
 
-.landing-page {
-    background-color: #161616;
-    padding-top: 1.2rem;
-    padding-bottom: 1.2rem;
-
+.landing-page-banner {
+    width: 100%;
+    height: calc(100vh - 1.5rem);
+    background-image: url("../resources/websitebackgroundphoto.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-.landing-page-left-div {
-    background-color: red;
-    width: 40%;
-    display: inline-block;
-    text-align: center;
+.landing-page-banner h2 {
+    font-size: 3rem;
     font-weight: bold;
     color: white;
-}
-
-.landing-page-right-div {
-    background-color: mediumpurple;
-    width: 57%;
-    display: inline-block;
-}
-
-.landing-page-description {
-    font-size: 1rem;
+    text-shadow: #3c3d40;
+    text-align: center;
 }
