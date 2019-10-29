@@ -81,17 +81,34 @@ header nav ul li a {
 
 .landing-page-banner {
     width: 100%;
-    height: calc(100vh - 1.5rem);
-    background-image: url("../resources/websitebackgroundphoto.jpg");
+    /*height: calc(100vh - 3rem); */
+    /*background-image: url("../resources/websitebackgroundphoto.jpg"); */
+    background-color: var(--wt-color-grey-dark);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .landing-page-banner h2 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: bold;
     color: white;
-    text-shadow: #3c3d40;
+    text-shadow: 0.1rem 0.1rem 0.1rem black;
+    text-align: center;
+    padding: 1rem 0rem;
+}
+
+.landing-page-upper-calandar {
+    padding-top: 5rem;
+    color: white;
     text-align: center;
 }
+
+.landing-page-lower-calandar {
+    padding-top: 1.5rem;
+    padding-bottom: 8rem;
+    color: white;
+    text-align: center;
+}
+
+
