@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+:root {
+    margin: 0;
+    --wt-color-white: #fff;
+    --wt-color-white-60: hsla(0,0%,100%,0.6);
+    --wt-color-white-30: hsla(0,0%,100%,0.3);
+    --wt-color-white-20: hsla(0,0%,100%,0.2);
+    --wt-color-white-10: hsla(0,0%,100%,0.1);
+    --wt-color-white-5: hsla(0,0%,100%,0.05);
+    --wt-color-dark: #27282c;
+    --wt-color-dark-70: rgba(39,40,44,0.7);
+    --wt-color-dark-40: rgba(39,40,44,0.4);
+    --wt-color-dark-20: rgba(39,40,44,0.2);
+    --wt-color-dark-5: rgba(39,40,44,0.05);
+    --wt-color-grey: #3c3d40;
+    --wt-color-grey-light: #f4f4f4;
+    --wt-color-grey-dark: #323236;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+header {
+    background-color: var(--wt-color-dark);
+    width: 100%;
+}
+
+header .header-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+header nav ul {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+header nav ul li {
+    display: inline-block;
+    float: left;
+    list-style: none;
+    padding: 0 1rem;
+}
+
+header nav ul li a {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: white;
+}
+
+.clearfix::after {
+    /*This is used to expand nav bar color out*/
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+
+/* LANDING PAGE NOW */
+.page-container {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+}
+
+.landing-page {
+    background-color: #161616;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+
+}
+
+.landing-page-left-div {
+    background-color: red;
+    width: 40%;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.landing-page-right-div {
+    background-color: mediumpurple;
+    width: 57%;
+    display: inline-block;
+}
+
+.landing-page-description {
+    font-size: 1rem;
+}
