@@ -111,4 +111,18 @@ header nav ul li a {
     text-align: center;
 }
 
+.hello-world-typing-div {
 
+}
+
+.hello-world-typing-p {
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--wt-color-dark);
+}
+
+.about-myself-main-section{
+    padding: 0rem 2rem;
+}
