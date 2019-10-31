@@ -81,12 +81,8 @@ header nav ul li a {
 
 .landing-page-banner {
     width: 100%;
-    /*height: calc(100vh - 3rem); */
-    /*background-image: url("../resources/websitebackgroundphoto.jpg"); */
     background-color: var(--wt-color-grey-dark);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+
 }
 
 .landing-page-banner h2 {
@@ -123,6 +119,32 @@ header nav ul li a {
     color: var(--wt-color-dark);
 }
 
+
+.section-container {
+    padding: 0rem 2rem;
+}
+
 .about-myself-main-section{
+    padding-top: 1rem;
+}
+
+.about-myself-div {
+    padding-bottom: 1.5rem;
+}
+
+.my-picture {
+    background-image: url("../resources/ericsonsmiling.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+
+}
+
+.my-picture-container {
+    padding-bottom: 1.5rem;
+}
+
+.main-style-2 {
     padding: 0rem 2rem;
 }
