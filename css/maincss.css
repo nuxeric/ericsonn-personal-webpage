@@ -146,5 +146,50 @@ header nav ul li a {
 }
 
 .main-style-2 {
-    padding: 0rem 2rem;
+    padding: 1.5rem 2rem 1.5rem;
+    background-color: var(--wt-color-grey-dark);
+    color: white;
+}
+
+.work-experience-title {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.experience-card {
+    background-color: #f7f7f7;
+    color: #141414;
+    padding: 1rem;
+}
+
+.experience-card-title-container {
+
+}
+
+.experience-card-picture {
+    background-image: url("../resources/SAMSUNG-Logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    float: left;
+}
+
+.experience-info {
+    display: inline-block;
+    color: var(--wt-color-dark);
+    max-height: 3.5rem;
+    padding-top: 1rem;
+    margin: 0;
+    line-height: 0.4rem;
+}
+
+.experience-info-company {
+    font-size: 0.5rem;
+}
+
+.experience-info-title {
+    font-size: 8px;
+
 }
