@@ -5,6 +5,10 @@
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+}
+
 :root {
     margin: 0;
     --wt-color-white: #fff;
@@ -157,9 +161,12 @@ header nav ul li a {
 }
 
 .experience-card {
-    background-color: #f7f7f7;
+    /*background-color: #f7f7f7;*/
+    background-color: #e0e0e0;
     color: #141414;
     padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0.01rem 0.01rem #3f3f3f;
 }
 
 .experience-card-title-container {
@@ -174,6 +181,8 @@ header nav ul li a {
     width: 3.5rem;
     height: 3.5rem;
     float: left;
+    margin-right: 0.2rem;
+    margin-bottom: 0.2rem;
 }
 
 .experience-info {
@@ -182,14 +191,64 @@ header nav ul li a {
     max-height: 3.5rem;
     padding-top: 1rem;
     margin: 0;
-    line-height: 0.4rem;
+    line-height: 0.5rem;
+
 }
 
 .experience-info-company {
-    font-size: 0.5rem;
+    font-size: 1rem;
 }
 
 .experience-info-title {
-    font-size: 8px;
+    font-size: 9px;
+    color: #999;
+}
+
+.experience-card-explanation {
+    padding: 0 0.5rem 0.5rem;
+    font-size: 0.75rem;
+    color: #999;
+}
+
+.ul-technology-list {
+    padding: 0.5rem 0.5rem;
+}
+
+.ul-technology-list li {
+    display: inline-block;
+    font-size: 0.8rem;
+    margin-right: 0.2rem;
+    padding: 5px;
+    color: #fff;
+    background-color: #3c6bf4;
+    margin-bottom: 0.4rem;
+}
+
+.main-style-1 {
+    padding: 1.5rem 2rem 1.5rem;
+    background-color: var(--wt-color-white-20);
+}
+
+.main-style-1-title-container {
 
 }
+
+.main-style-1-title {
+    text-align: center;
+    padding-bottom: 1rem;
+    color: #868383;
+    padding-bottom: 1rem;
+}
+
+#flappy-bird-picture {
+    background-image: url("../resources/flappyBirdLogo.png");
+}
+
+footer {
+    padding: 1rem;
+}
+
+footer h2 {
+    text-align: center;
+}
+
