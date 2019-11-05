@@ -9,6 +9,10 @@ ul {
     list-style: none;
 }
 
+a :hover {
+    opacity: 60%;
+}
+
 :root {
     margin: 0;
     --wt-color-white-20: hsla(0,0%,100%,0.2);
@@ -118,9 +122,6 @@ header nav ul li a {
     padding: 0rem 2rem;
 }
 
-.about-myself-main-section{
-    padding-top: 1rem;
-}
 
 .about-myself-div {
     padding-bottom: 1.5rem;
