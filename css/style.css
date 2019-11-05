@@ -79,7 +79,6 @@ header nav ul li a {
 .landing-page-banner {
     width: 100%;
     background-color: var(--wt-color-grey-dark);
-
 }
 
 .landing-page-banner h2 {
@@ -154,9 +153,12 @@ header nav ul li a {
     color: white;
 }
 
-.work-experience-title {
-    text-align: center;
+.main-style-2-title-container {
     padding-bottom: 1rem;
+}
+
+.main-style-2-title {
+    text-align: center;
 }
 
 .experience-card {
@@ -190,7 +192,7 @@ header nav ul li a {
     max-height: 3.5rem;
     padding-top: 1rem;
     margin: 0;
-    line-height: 0.5rem;
+        line-height: 0.5rem;
 
 }
 
@@ -299,6 +301,14 @@ footer div {
 }
 
 @media only screen and (min-width: 800px) {
+    header .header-logo {
+        font-size: 2rem;
+    }
+
+    header nav ul li a {
+        font-size: 1.5rem;
+    }
+
     .about-myself-div {
         padding-right: 5vh;
     }
@@ -320,5 +330,71 @@ footer div {
         margin-right: 20vh;
         margin-left: 20vh;
     }
+}
 
+@media only screen and (min-width: 1050px) {
+    .about-myself-div {
+        padding-right: 15vh;
+    }
+
+    .my-picture-container {
+        padding-left: 15vh;
+    }
+
+    .landing-page-banner {
+        height: 65vh;
+    }
+
+    .landing-page-upper-calandar {
+        padding-top: 10rem;
+        font-size: 2rem;
+    }
+
+    .landing-page-lower-calandar-container {
+        font-size: 2rem;
+    }
+
+    .landing-page-lower-calandar {
+        border-style: solid;
+        border-color: whitesmoke;
+        border-width: 0.09rem;
+        border-radius: 0.5rem;
+        padding: 0.3rem;
+    }
+
+    .hello-world-typing-p {
+        font-size: 3rem;
+    }
+
+    .about-myself-div {
+        font-size: 1.8rem;
+    }
+
+    .experience-info {
+        line-height: 0.67rem;
+    }
+
+    .experience-info-company {
+        font-size: 1.3rem;
+    }
+
+    .experience-info-title {
+        font-size: 1rem;
+    }
+
+    .experience-card-explanation {
+        font-size: 1rem;
+    }
+
+    .ul-technology-list li {
+        font-size: 1rem;
+    }
+
+    .main-style-1-title {
+        font-size: 3rem;
+    }
+
+    .main-style-2-title {
+        font-size: 3rem;
+    }
 }
