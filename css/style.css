@@ -59,6 +59,8 @@ header nav ul li a {
     color: white;
 }
 
+
+
 .clearfix::after {
     /*This is used to expand nav bar color out*/
     content: " ";
@@ -74,7 +76,6 @@ header nav ul li a {
     box-sizing: border-box;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-
 }
 
 .landing-page-banner {
@@ -127,21 +128,35 @@ header nav ul li a {
     padding-bottom: 1.5rem;
 }
 
+
 .my-picture {
+    align-items: center;
     background-image: url("../resources/ericsonsmiling.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 20rem;
-
+    max-width: 100%;
 }
 
-.my-picture-container {
-    padding-bottom: 1.5rem;
+@media only screen and (min-width: 500px) {
+    .my-picture-container {
+        max-width: 45%;
+        margin: 0 0 0 0;
+    }
+
+    .my-picture {
+    }
+
+    .about-myself-div {
+        float: right;
+        max-width: 50%;
+    }
 }
+
 
 .main-style-2 {
-    padding: 1.5rem 2rem 1.5rem;
+    padding: 2rem 2rem;
     background-color: var(--wt-color-grey-dark);
     color: white;
 }
@@ -216,7 +231,7 @@ header nav ul li a {
 }
 
 .main-style-1 {
-    padding: 1.5rem 2rem 1.5rem;
+    padding: 2rem 2rem;
     background-color: var(--wt-color-white-20);
 }
 
