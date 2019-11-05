@@ -134,6 +134,9 @@ header nav ul li a {
     padding-bottom: 1.5rem;
 }
 
+.my-picture-container {
+    text-align: center;
+}
 
 .my-picture {
     align-items: center;
@@ -296,6 +299,23 @@ footer div {
 }
 
 @media only screen and (min-width: 800px) {
+    .about-myself-div {
+        padding-right: 5vh;
+    }
+
+    .my-picture-container {
+        /* this was to get right of the right margin*/
+        margin: 0 auto;
+        float: left;
+        padding-left: 5vh;
+    }
+
+    .my-picture {
+        height: 25rem;
+        max-width: 100%;
+
+    }
+
     .experience-card {
         margin-right: 20vh;
         margin-left: 20vh;
