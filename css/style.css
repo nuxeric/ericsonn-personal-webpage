@@ -140,6 +140,28 @@ header nav ul li a {
 }
 
 @media only screen and (min-width: 500px) {
+    header .header-logo {
+        font-size: 1.5rem;
+        margin: 1.5rem 0;
+        text-align: left;
+        padding-top: 0rem;
+        padding-right: 1.5rem;
+        padding-left: 2rem;
+        padding-bottom: 0rem;
+        /* This is the line decoration */
+        border-right: 0.2rem solid #f3f3f3;
+        float: left;
+    }
+
+    header nav ul {
+        margin: 1rem 0;
+        float: left;
+    }
+
+    header nav ul li a {
+        line-height: 3rem;
+    }
+
     .my-picture-container {
         max-width: 45%;
         margin: 0 0 0 0;
