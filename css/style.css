@@ -121,11 +121,17 @@ header nav ul li a {
 
 .hello-world-typing-div {
     /* TODO*/
+    padding: 1rem;
+    text-align: center;
 }
 
 #hello-world-typing-p {
-    padding: 1rem;
-    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--wt-color-dark);
+}
+
+#cursor {
     font-weight: bold;
     font-size: 2rem;
     color: var(--wt-color-dark);
