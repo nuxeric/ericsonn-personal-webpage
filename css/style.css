@@ -59,6 +59,10 @@ header nav ul li a {
     color: white;
 }
 
+#header-resume-link {
+    display: none;
+}
+
 .clearfix::after {
     /*This is used to expand nav bar color out*/
     content: " ";
@@ -281,6 +285,11 @@ footer div {
         /* This is the line decoration */
         border-right: 0.2rem solid #f3f3f3;
         float: left;
+    }
+
+
+    #header-resume-link {
+        display: block;
     }
 
     header nav ul {
