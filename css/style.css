@@ -111,6 +111,10 @@ header nav ul li a {
     padding: 0.3rem;
 }
 
+.landing-page-lower-calandar a {
+    color: white;
+}
+
 .hello-world-typing-div {
     /* TODO*/
 }
@@ -310,14 +314,15 @@ footer div {
     }
 
     .about-myself-div {
-        padding-right: 5vh;
+        padding-right: 1vh;
+        margin-left: 1rem;
     }
 
     .my-picture-container {
         /* this was to get right of the right margin*/
         margin: 0 auto;
         float: left;
-        padding-left: 5vh;
+        padding-left: 1vh;
     }
 
     .my-picture {
@@ -334,11 +339,16 @@ footer div {
 
 @media only screen and (min-width: 1050px) {
     .about-myself-div {
-        padding-right: 15vh;
+        padding-right: 1vh;
     }
 
     .my-picture-container {
-        padding-left: 15vh;
+        padding-left: 1vh;
+    }
+
+    .my-picture {
+        height: 75vh;
+        width: 75vh;
     }
 
     .landing-page-banner {
