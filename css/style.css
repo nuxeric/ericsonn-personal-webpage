@@ -123,7 +123,7 @@ header nav ul li a {
     /* TODO*/
 }
 
-.hello-world-typing-p {
+#hello-world-typing-p {
     padding: 1rem;
     text-align: center;
     font-weight: bold;
@@ -131,6 +131,9 @@ header nav ul li a {
     color: var(--wt-color-dark);
 }
 
+#cursor {
+    border-right: black;
+}
 
 .section-container {
     padding: 0rem 2rem;
@@ -291,7 +294,7 @@ footer div {
 
 
     #header-resume-link {
-        display: block;
+        display: inline-block;
     }
 
     header nav ul {
@@ -383,7 +386,7 @@ footer div {
         padding: 0.3rem;
     }
 
-    .hello-world-typing-p {
+    #hello-world-typing-p {
         font-size: 3rem;
     }
 
