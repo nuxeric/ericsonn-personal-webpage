@@ -94,7 +94,7 @@ header nav ul li a {
     padding: 1rem 0rem;
 }
 
-.landing-page-upper-calandar {
+#landing-page-upper-calandar {
     padding-top: 5rem;
     color: white;
     text-align: center;
@@ -107,7 +107,7 @@ header nav ul li a {
     text-align: center;
 }
 
-.landing-page-lower-calandar {
+#landing-page-lower-calandar {
     border-style: solid;
     border-color: whitesmoke;
     border-width: 0.09rem;
@@ -115,26 +115,24 @@ header nav ul li a {
     padding: 0.3rem;
 }
 
-.landing-page-lower-calandar a {
+#landing-page-lower-calandar a {
     color: white;
 }
 
 .hello-world-typing-div {
-    /* TODO*/
     padding: 1rem;
     text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--wt-color-dark);
 }
 
 #hello-world-typing-p {
-    font-weight: bold;
-    font-size: 2rem;
-    color: var(--wt-color-dark);
+    /* TODO*/
 }
 
 #cursor {
-    font-weight: bold;
-    font-size: 2rem;
-    color: var(--wt-color-dark);
+    /* TODO*/
 }
 
 #cursor {
@@ -375,7 +373,7 @@ footer div {
         height: 65vh;
     }
 
-    .landing-page-upper-calandar {
+    #landing-page-upper-calandar {
         padding-top: 10rem;
         font-size: 2rem;
     }
@@ -384,7 +382,8 @@ footer div {
         font-size: 2rem;
     }
 
-    .landing-page-lower-calandar {
+
+    #landing-page-lower-calandar {
         border-style: solid;
         border-color: whitesmoke;
         border-width: 0.09rem;
@@ -392,7 +391,7 @@ footer div {
         padding: 0.3rem;
     }
 
-    #hello-world-typing-p {
+    .hello-world-typing-div {
         font-size: 3rem;
     }
 

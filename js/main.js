@@ -21,6 +21,29 @@ function typeWriter() {
     setTimeout('typeWriter()', speed);
 }
 
+function grabDate() {
+    var date = new Date();
+    var time = date.toLocaleTimeString();
+    console.log(date);
+    console.log(time);
+    console.log(date.getFullYear() , date.getMonth() , date.getDate() )
+    var arr = [date.getFullYear() , date.getMonth() , date.getDate()]
+    var i;
+    for (i = 0; i < arr.length; i++) {
+        document.getElementById('landing-page-lower-calandar-atag').innerHTML += arr[i];
+        document.getElementById('landing-page-upper-calandar').innerHTML += arr[i];
+        if ( i === arr.length - 1 ) {
+            // nothing here
+        } else {
+            document.getElementById('landing-page-lower-calandar-atag').innerHTML += ".";
+            document.getElementById('landing-page-upper-calandar').innerHTML += ".";
+        }
+    }
+
+}
+
+grabDate();
+
 
 typeWriter();
 
@@ -36,3 +59,5 @@ setInterval(() => {
         cursor = true;
     }
 }, speed);
+
+
