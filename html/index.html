@@ -20,11 +20,11 @@
 
 
 
-<body>
+<body data-spy="scroll" data-target="#main-navigation-bar">
 
 <!-- navigation bar -->
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+<header class=" sticky-top">
+    <nav id="main-navigation-bar" class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand d-none d-lg-block" href="#">Eric Son</a>
         <a class="navbar-brand d-lg-none"><span>E</span><span>S</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,16 +33,16 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#hello-world-typing-span">About <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Work Experience</a>
+                    <a class="nav-link" href="#work-experience-section">Work Experience</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
+                    <a class="nav-link" href="#project-section">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#footer">Contact</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Resume</a>
@@ -88,10 +88,18 @@
 
 <!-- About Me Section -->
 <section>
-    <div class="container">
-        <h1 class="section-header text-center"> Hello World!</h1>
+    <div class="container" >
+        <div class="hello-world-typing-div text-center mb-4">
+            <span class="h1 section-header" id="hello-world-typing-span">
+                Hello World!
+            </span>
+            <span class="h1 section-header" id="cursor">
+                |
+            </span>
+        </div>
+
             <div class="row mb-4">
-                <div class="col-sm mb-4 mr-4">
+                <div class="col-sm mb-4">
                     Hey! My name is Eric, I am a third-year student studying Computer Science and Business at
                     the University of British Columbia. Being a teenager that grew up in the 2000s, my life
                     has always revolved around technology. You can rest assured I am a prototypical nerd.
@@ -108,7 +116,7 @@
                     impact when I graduate from UBC. We are at the forefront of a technological revolution
                     and it’s up to us as students to lead the charge at meaningful change. Let me know if we can chat.
                 </div>
-                <div class="col-sm mb-4 ml-4">
+                <div class="col-sm mb-4">
                     <img src="../resources/ericsonsmiling.jpeg" class="img-fluid" alt="Picture of Eric">
                 </div>
             </div>
@@ -116,80 +124,54 @@
 </section>
 
 <!-- Work Experience Section -->
-<section>
-    <div class="container mb-5">
+<section id="work-experience-section" class="p-4">
+    <div class="container">
         <h1 class="section-header text-center"> Work Experience</h1>
         <div class="container-fluid">
             <div class="row">
-                <div class="col rounded experience-box shadow">
-                    <div class="language-bar"></div>
-                    <div class="row container p-4">
-                        <div class="col-2 text-center d-none  d-md-block">
-                            <img src="../resources/SAMSUNG-Logo.png" class="img-fluid experience-box-picture" alt="Picture of Samsung">
+                <div class="col experience-box shadow">
+                    <div class="container-fluid p-0">
+                        <!-- Top part -->
+                        <div class="row pb-3">
+                            <!-- Image of card -->
+                            <div class="col-md-2 d-none d-md-block">
+                                <img src="../resources/SAMSUNG-Logo.png" class="img-fluid experience-box-picture" alt="Picture of Samsung">
+                            </div>
+                            <!-- Name of card -->
+                            <div class="col-md-6 my-auto">
+                                <h3 class="experience-box-header">Samsung</h3>
+                                <p class="text-muted">Junior Cloud Operations Engineer</p>
+                            </div>
+                            <!-- Date of card -->
+                            <div class="col-md-4 text-right d-none d-md-block">
+                                <p class="text-muted">Sept 2019 - December 2019</p>
+                            </div>
                         </div>
-                        <div class="col-6" style="background-color: red">
-                            <h3 class="experience-box-header">Samsung</h3>
-                            <p class="text-muted">Junior Cloud Operations Engineer</p>
+                        <!-- Bottom Part -->
+                        <div class="row pb-3">
+                            <div class="col">
+                                <p class="text-muted">
+                                    I am currently interning at Samsung Research under the Samsung Pay Cloud
+                                    Infrastructure team located in Vancouver, British Columbia. As per usual
+                                    with most Operations / SRE interns I am given responsibilities over the CI/CD
+                                    pipeline and for the maintenance of infrastructure and/or services.
+                                    In this role I led a migration of infrastructure to use AWS S3 as the backend
+                                    for our yum repository which removed a single point of failure for all services
+                                    in production. I presented this POC to the various operation team leads from all global
+                                    teams in Samsung Pay push to implement my solution globally. My experience from an Operations
+                                    role provides a unique look at Software Engineering
+                                    and augments my understanding of building great microservices.
+                                </p>
+                            </div>
                         </div>
-                        <div class="col-4 text-right ml-auto d-none d-sm-block">
-                            <p class="text-muted">September 2019 - December 2019</p>
-                        </div>
-
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            I am currently interning at Samsung Research under the Samsung Pay Cloud
-                            Infrastructure team located in Vancouver, British Columbia. As per usual
-                            with most Operations / SRE interns I am given responsibilities over the CI/CD
-                            pipeline and for the maintenance of infrastructure and/or services.
-                            In this role I led a migration of infrastructure to use AWS S3 as the backend
-                            for our yum repository which removed a single point of failure for all services
-                            in production. I presented this POC to the various operation team leads from all global
-                            teams in Samsung Pay push to implement my solution globally. My experience from an Operations
-                            role provides a unique look at Software Engineering
-                            and augments my understanding of building great microservices.
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">test</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Projects Section -->
-<section>
-    <div class="container">
-        <h1 class="section-header text-center"> Projects</h1>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col rounded experience-box shadow">
-                    <div class="language-bar"></div>
-                    <div class="row container p-4">
-                        <div class="col-md-2 text-center d-none  d-md-block">
-                            <img src="../resources/flappyBirdLogo.png" class="img-fluid experience-box-picture" alt="Picture of Samsung">
-                        </div>
-                        <div class="col-6">
-                            <h3 class="experience-box-header">Flappy Bird Remake</h3>
-                            <p class="text-muted">A remake on the grandfather of casual gaming</p>
-                        </div>
-                        <div class="col-4 text-right ml-auto d-none d-sm-block">
-                            <p class="text-muted">May 2019 - July 2019</p>
-                        </div>
-
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            It’s very typical of a student to start out his “personal project career” with
-                            a 2D game and my journey was no different. I grew up playing video games and
-                            wanted to implement a simple game from scratch. Thus, I built a remake of the
-                            classic Flappy Bird game in Java using the Swing Framework to display my UI components.
-                            I also implemented pixel by pixel collision detection as the original game often had me
-                            scratching my head and yelling at my screen.
-                            It was quite fitting to begin creating the very games that were my first
-                            introduction into computer science.
+                        <!-- Tech List Part -->
+                        <div class="row pl-3">
+                            <ul>
+                                <li class="btn btn-static rounded tech-list-item">Python</li>
+                                <li class="btn btn-static rounded tech-list-item">AWS</li>
+                                <li class="btn btn-static rounded tech-list-item">Linux</li>
+                                <li class="btn btn-static rounded tech-list-item">Ansible</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -198,8 +180,9 @@
     </div>
 </section>
 
-<!-- Test Section -->
-<section>
+
+<!-- Project Section -->
+<section id="project-section" class="p-4">
     <div class="container">
         <h1 class="section-header text-center"> Projects</h1>
         <div class="container-fluid">
@@ -209,36 +192,38 @@
                         <!-- Top part -->
                         <div class="row pb-3">
                             <!-- Image of card -->
-                            <div class="col-md-2 d-none d-md-block" style="background-color: green">
+                            <div class="col-md-2 d-none d-md-block">
                                 <img src="../resources/flappyBirdLogo.png" class="img-fluid experience-box-picture" alt="Picture of Samsung">
                             </div>
                             <!-- Name of card -->
-                            <div class="col-md-6 my-auto" style="background-color: orange">
+                            <div class="col-md-6 my-auto">
                                 <h3 class="experience-box-header">Flappy Bird Remake</h3>
                                 <p class="text-muted">A remake on the grandfather of casual gaming</p>
                             </div>
                             <!-- Date of card -->
-                            <div class="col-md-4 text-right d-none d-md-block" style="background-color: pink">
+                            <div class="col-md-4 text-right d-none d-md-block">
                                 <p class="text-muted">May 2019 - July 2019</p>
                             </div>
                         </div>
                         <!-- Bottom Part -->
                         <div class="row pb-3">
                             <div class="col">
-                                It’s very typical of a student to start out his “personal project career” with
-                                a 2D game and my journey was no different. I grew up playing video games and
-                                wanted to implement a simple game from scratch. Thus, I built a remake of the
-                                classic Flappy Bird game in Java using the Swing Framework to display my UI components.
-                                I also implemented pixel by pixel collision detection as the original game often had me
-                                scratching my head and yelling at my screen.
-                                It was quite fitting to begin creating the very games that were my first
-                                introduction into computer science.
+                                <p class="text-muted">
+                                    It’s very typical of a student to start out his “personal project career” with
+                                    a 2D game and my journey was no different. I grew up playing video games and
+                                    wanted to implement a simple game from scratch. Thus, I built a remake of the
+                                    classic Flappy Bird game in Java using the Swing Framework to display my UI components.
+                                    I also implemented pixel by pixel collision detection as the original game often had me
+                                    scratching my head and yelling at my screen.
+                                    It was quite fitting to begin creating the very games that were my first
+                                    introduction into computer science.
+                                </p>
                             </div>
                         </div>
                         <!-- Tech List Part -->
                         <div class="row pl-3">
                             <ul>
-                                <li class="btn btn-static rounded">Java</li>
+                                <li class="btn btn-static rounded tech-list-item">Java</li>
                             </ul>
                         </div>
                     </div>
@@ -247,6 +232,28 @@
         </div>
     </div>
 </section>
+
+<!-- Footer -->
+<footer id="footer" class="mt-3">
+    <!-- top of footer for picture -->
+    <div class="row">
+        <div class="col-2 offset-10" style="background-color: brown">
+            <img src="../resources/bitmoji-crying.png" class="img-fluid" id="bitmoji-crying-image" alt="bitmoji crying picture">
+        </div>
+    </div>
+
+    <!-- actual footer -->
+    <div class="row" style="background-color: #656565">
+        <div class="col-sm-12 col-md-6 text-center offset-md-3" style="background-color: red">
+            <a> <i class="mr-4 fab fa-linkedin fa-3x"></i> </a>
+            <a> <i class="mr-4 fab fa-github fa-3x"></i> </a>
+            <a> <i class="mr-4 fas fa-envelope fa-3x"></i> </a>
+            <a> <i class="mr-4 far fa-file fa-3x"></i> </a>
+        </div>
+    </div>
+</footer>
+
+
 
 <script src="../js/main.js"></script>
 

@@ -1,12 +1,12 @@
 
 var i = 0;
 var message = 'Hello World!';
-var speed = 50;
+var speed = 80;
 var backspace = false;
 let delay = 25;
 
 function typeWriter() {
-    document.getElementById("hello-world-typing-p").innerHTML = message.substr(0, i);
+    document.getElementById("hello-world-typing-span").innerHTML = message.substr(0, i);
     if (i > message.length + delay) {
         backspace = true;
     }
@@ -42,14 +42,13 @@ function grabDate() {
 
 }
 
-grabDate();
 
 
 typeWriter();
 
 
 var cursor = true;
-var speed = 220;
+var speed2 = 220;
 setInterval(() => {
     if(cursor) {
         document.getElementById('cursor').style.opacity = 0;
@@ -58,6 +57,6 @@ setInterval(() => {
         document.getElementById('cursor').style.opacity = 1;
         cursor = true;
     }
-}, speed);
+}, speed2);
 
 
