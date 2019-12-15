@@ -12,3 +12,34 @@ body{
 .navbar, .navbar-brand {
     font-size: 1.5rem;
 }
+
+#landing-page-picture {
+}
+
+#landing-page-header {
+    font-weight: bolder;
+    color: #545454;
+}
+
+.jumbotron {
+    background-color: white;
+}
+
+#landing-page-icons {
+    font-size: 1.3rem;
+}
+
+.section-header {
+    font-weight: bolder;
+    color: #545454;
+    margin-bottom: 3rem;
+}
+
+.experience-box {
+    background-color: #e0e0e0;
+    padding: 2rem;
+}
+
+.language-bar {
+    /* TODO */
+}

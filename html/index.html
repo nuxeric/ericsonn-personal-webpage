@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Eric Son</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
@@ -57,11 +57,100 @@
 <!-- main landing page -->
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
-        <h1 class="display-4">Fluid jumbotron</h1>
-        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        <div class="row">
+            <div class="col-sm-5">
+                <h1 id="landing-page-header">
+                    Developer,
+                    <br>
+                    Student,
+                    <br>
+                    Laker's Basketball Nerd.
+                </h1>
+                <br>
+                <p id="landing-page-p">
+                I am working an 8 month term <a href="https://research.samsung.com/srca">@Samsung</a>. which you can read more about <a href="#">here</a>.
+                    Scroll down to find out more about who I am and what I love.
+                </p>
+                <br>
+                <div class="container-fluid" id="landing-page-icons">
+                    <i class="mr-4 fab fa-linkedin"></i>
+                    <i class="mr-4 fab fa-github"></i>
+                    <i class="mr-4 fas fa-envelope"></i>
+                    <i class="mr-4 far fa-file"></i>
+                </div>
+            </div>
+            <div class="col-sm text-center" id="landing-page-picture">
+                <img src="../resources/bitmoji.png" class="img-fluid" alt="bitmoji image">
+            </div>
+        </div>
     </div>
 </div>
 
+<!-- About Me Section -->
+<section>
+    <div class="container">
+        <h1 class="section-header text-center"> Hello World!</h1>
+            <div class="row mb-4">
+                <div class="col-sm mb-4 mr-4">
+                    Hey! My name is Eric, I am a third-year student studying Computer Science and Business at
+                    the University of British Columbia. Being a teenager that grew up in the 2000s, my life
+                    has always revolved around technology. You can rest assured I am a prototypical nerd.
+                    I absolutely love playing video games, reading into highly advanced (more advanced
+                    than anybody should need) basketball statistics, and geeking out about the
+                    latest software trends and releases. However, these aren’t my defining characteristics. I have always been
+                    labeled as a people person, and that’s the kind of engineer I am. I chose to double
+                    major in Computer Science and Business because my passion lies in creating value for people.
+                    <br>
+                    <br>
+                    I fear of days filled with routine and menial tasks, instead I wish to use my
+                    education to identify and create solutions to legitimate problems in our society.
+                    Through the union of computer science and business I want to generate a lasting
+                    impact when I graduate from UBC. We are at the forefront of a technological revolution
+                    and it’s up to us as students to lead the charge at meaningful change. Let me know if we can chat.
+                </div>
+                <div class="col-sm mb-4 ml-4">
+                    <img src="../resources/ericsonsmiling.jpeg" class="img-fluid" alt="Picture of Eric">
+                </div>
+            </div>
+    </div>
+</section>
+
+<!-- Work Experience Section -->
+<section>
+    <div class="container">
+        <h1 class="section-header text-center"> Work Experience</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col rounded experience-box shadow">
+                    <div class="language-bar"></div>
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="../resources/SAMSUNG-Logo.png" class="img-fluid" alt="Picture of Samsung">
+                        </div>
+                        <div class="col-10" style="background-color: red">
+                            <div class="row" style="background-color: green">tester</div>
+                            <div class="row" style="background-color: blue">tester</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            I am currently interning at Samsung Research under the Samsung Pay Cloud
+                            Infrastructure team located in Vancouver, British Columbia. As per usual
+                            with most Operations / SRE interns I am given responsibilities over the CI/CD
+                            pipeline and for the maintenance of infrastructure and/or services.
+                            In this role I led a migration of infrastructure to use AWS S3 as the backend
+                            for our yum repository which removed a single point of failure for all services
+                            in production. I presented this POC to the various operation team leads from all global
+                            teams in Samsung Pay push to implement my solution globally. My experience from an Operations
+                            role provides a unique look at Software Engineering
+                            and augments my understanding of building great microservices.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 <script src="../js/main.js"></script>
