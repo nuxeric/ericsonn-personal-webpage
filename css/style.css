@@ -9,6 +9,14 @@ body{
     position: relative;
 }
 
+#main-navigation-bar {
+    background-color: white;
+}
+
+#main-navigation-bar.scrolled {
+
+}
+
 .navbar, .navbar-brand {
     font-size: 1.5rem;
 }
@@ -79,11 +87,15 @@ body{
 }
 
 .tech-list-item {
-    color: whitesmoke;
+    font-size: 1rem;
 }
 
 #bitmoji-crying-image {
     max-width: 100%;
+}
+
+#footer-links {
+    background-color: #fafafa;
 }
 
 #footer-links a {
@@ -106,3 +118,13 @@ body{
 
 }
 
+@media (min-width: 992px) {
+    .navbar-light .navbar-nav .show > .nav-link,
+    .navbar-light .navbar-nav .active > .nav-link,
+    .navbar-light .navbar-nav .nav-link.show,
+    .navbar-light .navbar-nav .nav-link.active {
+        text-underline-position: below;
+        border-bottom: 3px solid rgba(0, 0, 0, 0.9);
+        transition: 0.3s all ease-in-out;
+    }
+}
