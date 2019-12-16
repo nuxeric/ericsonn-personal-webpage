@@ -21,7 +21,11 @@ function typeWriter() {
     setTimeout('typeWriter()', speed);
 }
 
+$(function () {
+    $('[data-toggle="popover"]').popover()
+});
 
+$('#bitmoji-crying-image').popover('show');
 
 
 

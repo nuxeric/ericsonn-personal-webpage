@@ -52,7 +52,6 @@
     </nav>
 </header>
 
-<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
 
 <!-- main landing page -->
 <div class="jumbotron jumbotron-fluid">
@@ -237,8 +236,8 @@
 <footer id="footer" class="mt-3">
     <!-- top of footer for picture -->
     <div class="row">
-        <div class="col-2 offset-10" style="background-color: brown">
-            <img src="../resources/bitmoji-crying.png" class="img-fluid" id="bitmoji-crying-image" alt="bitmoji crying picture">
+        <div class="col-2 offset-10">
+            <img  data-toggle="popover" title="Closing Note..." data-content="We're sad to see you go! Please let me know if we could grab some coffee or chat over the phone, I would love to get to know more people and their stories!" src="../resources/bitmoji-crying.png" class="img-fluid" id="bitmoji-crying-image" alt="bitmoji crying picture">
         </div>
     </div>
 
@@ -255,13 +254,19 @@
 
 
 
-<script src="../js/main.js"></script>
+
 
 <!-- bootstrap dependencies -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+<script src="../vendors/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
+<script src="../vendors/bootstrap-4.4.1-dist/js/bootstrap.bundle.js"></script>
+
 <script defer src="../vendors/fontawesome-free-5.11.2-web/js/all.js"></script> <!--load all styles -->
+
+<script src="../js/main.js"></script>
+
 </body>
 </html>
