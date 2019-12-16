@@ -2,181 +2,274 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Eric Son</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <!-- bootstrap local for my own use-->
+    <link href="../vendors/bootstrap-4.4.1-dist/css/bootstrap.css" rel="stylesheet">
+    <!-- bootstrap link for online use -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link href="../vendors/fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet">
+
 </head>
 
 
 
-<body>
+
+<body data-spy="scroll" data-target="#main-navigation-bar">
 
 <!-- navigation bar -->
-<header class="clearfix">
-    <a href="index.html" class = "header-logo">Nuxer</a>
-    <nav>
-        <ul>
-            <li><a href="#work-experience-title"> Work Experience </a></li>
-            <li><a href="#project-title"> Projects </a></li>
-            <li><a href="#hello-world-typing-p"> About </a></li>
-            <li><a href="#resume-footer-pic"> Contact </a></li>
-            <li id="header-resume-link"><a href="../resources/EricSonUpdatedResume2019Oct.pdf"> Resume </a></li>
-        </ul>
+<header class=" sticky-top">
+    <nav id="main-navigation-bar" class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand d-none d-lg-block" href="#">Eric Son</a>
+        <a class="navbar-brand d-lg-none"><span>E</span><span>S</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#hello-world-typing-span">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#work-experience-section">Work Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#project-section">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#footer">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../resources/EricSonUpdatedResume2019Oct.pdf">Resume</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 </header>
 
 
-
-
-<main>
-    <!--Landing Section-->
-    <section class="landing-page-banner">
-        <div id="landing-page-upper-calandar">V </div>
-        <h2>Hi! My name is Eric</h2>
-        <div class="landing-page-lower-calandar-container">
-            <span id="landing-page-lower-calandar">
-                <a id="landing-page-lower-calandar-atag" href="#work-experience-title">
-                    New in V
-                </a>
-            </span>
-        </div>
-    </section>
-
-    <!--About Myself Section-->
-    <section class="main-style-1 clearfix">
-        <!--About Myself Section's Hello World Typing Animation-->
-        <div class="hello-world-typing-div">
-            <span id="hello-world-typing-p">
-
-            </span>
-            <span id="cursor"> | </span>
-        </div>
-        <!--About Myself Section Paragraph-->
-        <div class="about-myself-div clearfix">
-            <p>
-                Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit. Alias autem consectetur culpa illum laboriosam
-                nihil officiis quis similique veniam. Ad eius neque quibusdam quidem quisquam
-                rem tenetur ullam vel voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Amet asperiores autem corporis cupiditate dignissimos dolor ea enim, est, eveniet, id ipsam
-                libero minus natus nisi quasi ratione rerum tempore voluptatibus!
-                Lorem ipsum dolor sit amet, consectetur adipisi
-                cing elit. A accusantium aliquid aspernatur atque aut
-                deserunt fugit impedit incidunt ipsa magnam maxime minima
-                obcaecati, placeat possimus, quo repellendus reprehenderit totam voluptatem!
-            </p>
-        </div>
-        <!--About Myself Section Picture-->
-        <div class="my-picture-container clearfix">
-           <!-- <div class="my-picture"></div> -->
-            <img src="../resources/ericsonsmiling.jpeg" class="my-picture" alt="Eric Son Profile Picture">
-        </div>
-    </section>
-
-
-    <!--Work Experience Section-->
-    <section class="main-style-2">
-        <div class="main-style-2-title-container">
-            <h2 id="work-experience-title" class="main-style-2-title">Work Experience</h2>
-        </div>
-        <div class="experience-card">
-            <div class="experience-card-title-container clearfix">
-                <div>
-                    <a href="https://research.samsung.com/srca">
-                        <div class="experience-card-picture"></div>
-                    </a>
-
-                    <div class="experience-info">
-                        <h2 class="experience-info-company">Samsung</h2>
-                        <br>
-                        <h3 class="experience-info-title">Junior Cloud Operations Engineer  ||  Present </h3>
-                    </div>
+<!-- main landing page -->
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <h1 id="landing-page-header">
+                    Developer,
+                    <br>
+                    Student,
+                    <br>
+                    Laker's Basketball Nerd.
+                </h1>
+                <br>
+                <p id="landing-page-p">
+                I am working an 8 month term <a href="https://research.samsung.com/srca">@Samsung</a>. which you can read more about <a href="#work-experience-section">here</a>.
+                    Scroll down to find out more about who I am and what I love.
+                </p>
+                <br>
+                <div class="container-fluid" id="landing-page-icons">
+                    <a href="https://www.linkedin.com/in/eric-sonn/"><i class="mr-4 fab fa-linkedin"></i></a>
+                    <a href="https://github.com/nuxeric"><i class="mr-4 fab fa-github"></i></a>
+                    <a href="mailto: nuxeric@hotmail.com"><i class="mr-4 fas fa-envelope"></i></a>
+                    <a href="../resources/EricSonUpdatedResume2019Oct.pdf"><i class="mr-4 far fa-file"></i></a>
                 </div>
             </div>
-
-            <div class="experience-card-explanation">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
-                    blanditiis commodi dolore eos, et ex fugiat laudantium,
-                    maxime nemo, nisi nulla officia quisquam reiciendis reprehenderit
-                    sint tenetur totam ut vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque,
-                    autem consequatur ducimus fugiat molestias nemo quae reprehenderit temporibus. Alias
-                    aperiam fugit libero ecessitatibus quae quasi repellendus
-                    sunt voluptas voluptatem voluptatibus!</p>
+            <div class="col-sm text-center" id="landing-page-picture">
+                <img src="../resources/bitmoji.png" class="img-fluid" alt="bitmoji image">
             </div>
-
-            <div>
-                <ul class="ul-technology-list">
-                    <li>Python</li>
-                    <li>AWS</li>
-                    <li>Linux</li>
-                    <li>Ansible</li>
-                </ul>
-            </div>
-
-        </div>
-    </section>
-
-
-
-    <!--Project Section-->
-    <section class="main-style-1">
-        <div class="main-style-1-title-container">
-            <h2 id="project-title" class="main-style-1-title"> Projects </h2>
-        </div>
-
-        <div class="experience-card">
-            <div class="experience-card-title-container clearfix">
-                <div>
-                    <a href="#">
-                        <div class="experience-card-picture" id="flappy-bird-picture"></div>
-                    </a>
-
-                    <div class="experience-info">
-                        <h2 class="experience-info-company">Flappy Bird</h2>
-                        <br>
-                        <h3 class="experience-info-title">A remake on the grandfather of casual gaming</h3>
-                    </div>
-                </div>
-            </div>
-
-            <div class="experience-card-explanation">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
-                    blanditiis commodi dolore eos, et ex fugiat laudantium,
-                    maxime nemo, nisi nulla officia quisquam reiciendis reprehenderit
-                    sint tenetur totam ut vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque,
-                    autem consequatur ducimus fugiat molestias nemo quae reprehenderit temporibus. Alias
-                    aperiam fugit libero ecessitatibus quae quasi repellendus
-                    sunt voluptas voluptatem voluptatibus!</p>
-            </div>
-
-            <div>
-                <ul class="ul-technology-list">
-                    <li>Java</li>
-                </ul>
-            </div>
-
-        </div>
-    </section>
-
-</main>
-
-
-
-<!--Footer Section-->
-<footer>
-    <div>
-        <h2>Let's get in touch</h2>
-        <div class="footer-picture-container">
-            <ul>
-                <a href="https://www.linkedin.com/in/eric-sonn/"><img class="footer-pic" id="linkedin-footer-pic" src="../resources/linkedinlogo.png" width="30px" height="30px"></a>
-                <a href="https://github.com/nuxeric"><img class="footer-pic" id="email-footer-pic" src="../resources/github-logo.png" width="30px" height="30px"></a>
-                <a href="mailto: nuxeric@hotmail.com"><img class="footer-pic" id="github-footer-pic" src="../resources/email-logo.png" width="30px" height="30px"></a>
-                <a href="../resources/EricSonUpdatedResume2019Oct.pdf" ><img class="footer-pic" id="resume-footer-pic" src="../resources/resume-logo.png" width="30px" height="30px"></a>
-            </ul>
         </div>
     </div>
+</div>
+
+<!-- About Me Section -->
+<section>
+    <div class="container" >
+        <div class="hello-world-typing-div text-center mb-4">
+            <span class="h1 section-header" id="hello-world-typing-span">
+                Hello World!
+            </span>
+            <span class="h1 section-header" id="cursor">
+                |
+            </span>
+        </div>
+
+            <div class="row mb-4">
+                <div class="col-sm mb-4">
+                    Hey! My name is Eric, I am a third-year student studying Computer Science and Business at
+                    the University of British Columbia. Being a teenager that grew up in the 2000s, my life
+                    has always revolved around technology. You can rest assured I am a prototypical nerd.
+                    I absolutely love playing video games, reading into highly advanced (more advanced
+                    than anybody should need) basketball statistics, and geeking out about the
+                    latest software trends and releases. However, these aren’t my defining characteristics. I have always been
+                    labeled as a people person, and that’s the kind of engineer I am. I chose to double
+                    major in Computer Science and Business because my passion lies in creating value for people.
+                    <br>
+                    <br>
+                    I fear of days filled with routine and menial tasks, instead I wish to use my
+                    education to identify and create solutions to legitimate problems in our society.
+                    Through the union of computer science and business I want to generate a lasting
+                    impact when I graduate from UBC. We are at the forefront of a technological revolution
+                    and it’s up to us as students to lead the charge at meaningful change. Let me know if we can chat.
+                </div>
+                <div class="col-sm mb-4">
+                    <img src="../resources/ericsonsmiling.jpeg" class="img-fluid" alt="Picture of Eric">
+                </div>
+            </div>
+    </div>
+</section>
+
+<!-- Work Experience Section -->
+<section id="work-experience-section" class="p-4">
+    <div class="container">
+        <h1 class="section-header text-center"> Work Experience</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col experience-box shadow rounded">
+                    <div class="container-fluid p-0">
+                        <!-- Top part -->
+                        <div class="row pb-3">
+                            <!-- Image of card -->
+                            <div class="col-md-2 d-none d-md-block">
+                                <img src="../resources/SAMSUNG-Logo.png" class="img-fluid experience-box-picture" alt="Picture of Samsung">
+                            </div>
+                            <!-- Name of card -->
+                            <div class="col-md-6 my-auto">
+                                <h3 class="experience-box-header">Samsung</h3>
+                                <p class="text-muted">Junior Cloud Operations Engineer</p>
+                            </div>
+                            <!-- Date of card -->
+                            <div class="col-md-4 text-right d-none d-md-block">
+                                <p class="text-muted">Sept 2019 - December 2019</p>
+                            </div>
+                        </div>
+                        <!-- Bottom Part -->
+                        <div class="row pb-3">
+                            <div class="col">
+                                <p class="text-muted">
+                                    I am currently interning at Samsung Research under the Samsung Pay Cloud
+                                    Infrastructure team located in Vancouver, British Columbia. As per usual
+                                    with most Operations / SRE interns I am given responsibilities over the CI/CD
+                                    pipeline and for the maintenance of infrastructure and/or services.
+                                    In this role I led a migration of infrastructure to use AWS S3 as the backend
+                                    for our yum repository which removed a single point of failure for all services
+                                    in production. I presented this POC to the various operation team leads from all global
+                                    teams in Samsung Pay push to implement my solution globally. My experience from an Operations
+                                    role provides a unique look at Software Engineering
+                                    and augments my understanding of building great microservices.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Tech List Part -->
+                        <div class="row pl-3">
+                            <ul>
+                                <li class="badge badge-primary tech-list-item">Python</li>
+                                <li class="badge badge-primary tech-list-item">AWS</li>
+                                <li class="badge badge-primary tech-list-item">Linux</li>
+                                <li class="badge badge-primary tech-list-item">Ansible</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Project Section -->
+<section id="project-section" class="p-4">
+    <div class="container">
+        <h1 class="section-header text-center"> Projects</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col experience-box shadow rounded">
+                    <div class="container-fluid p-0">
+                        <!-- Top part -->
+                        <div class="row pb-3">
+                            <!-- Image of card -->
+                            <div class="col-md-2 d-none d-md-block">
+                                <img src="../resources/flappyBirdLogo.png" class="img-fluid experience-box-picture" alt="Picture of Samsung">
+                            </div>
+                            <!-- Name of card -->
+                            <div class="col-md-6 my-auto">
+                                <h3 class="experience-box-header">Flappy Bird Remake</h3>
+                                <p class="text-muted">A remake on the grandfather of casual gaming</p>
+                            </div>
+                            <!-- Date of card -->
+                            <div class="col-md-4 text-right d-none d-md-block">
+                                <p class="text-muted">May 2019 - July 2019</p>
+                            </div>
+                        </div>
+                        <!-- Bottom Part -->
+                        <div class="row pb-3">
+                            <div class="col">
+                                <p class="text-muted">
+                                    It’s very typical of a student to start out his “personal project career” with
+                                    a 2D game and my journey was no different. I grew up playing video games and
+                                    wanted to implement a simple game from scratch. Thus, I built a remake of the
+                                    classic Flappy Bird game in Java using the Swing Framework to display my UI components.
+                                    I also implemented pixel by pixel collision detection as the original game often had me
+                                    scratching my head and yelling at my screen.
+                                    It was quite fitting to begin creating the very games that were my first
+                                    introduction into computer science.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Tech List Part -->
+                        <div class="row pl-3">
+                            <ul>
+                                <li class="badge badge-primary tech-list-item"> Java</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer" class="mt-3">
+
+    <div class="container-fluid">
+        <!-- top of footer for picture -->
+        <div class="row" >
+            <div class="col-2 offset-10">
+                <img  data-toggle="popover" title="Closing Note..." data-content="We're sad to see you go! Please let me know if we could grab some coffee or chat over the phone, I would love to get to know more people and their stories!" src="../resources/bitmoji-crying.png" class="img-fluid" id="bitmoji-crying-image" alt="bitmoji crying picture">
+            </div>
+        </div>
+        <!-- actual footer -->
+        <div class="row">
+            <div class="col-sm-12 col-md-6 text-center offset-md-3" id="footer-links">
+                <a href="https://www.linkedin.com/in/eric-sonn/"> <i class="mr-4 fab fa-linkedin fa-2x"></i> </a>
+                <a href="https://github.com/nuxeric"> <i class="mr-4 fab fa-github fa-2x"></i> </a>
+                <a href="mailto: nuxeric@hotmail.com"> <i class="mr-4 fas fa-envelope fa-2x"></i> </a>
+                <a href="../resources/EricSonUpdatedResume2019Oct.pdf"> <i class="mr-4 far fa-file fa-2x"></i> </a>
+            </div>
+        </div>
+    </div>
+
 </footer>
 
+
+
+
+
+<!-- bootstrap dependencies -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="../vendors/bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
+<script src="../vendors/bootstrap-4.4.1-dist/js/bootstrap.bundle.js"></script>
+
+<script defer src="../vendors/fontawesome-free-5.11.2-web/js/all.js"></script> <!--load all styles -->
+
 <script src="../js/main.js"></script>
+
 </body>
 </html>
