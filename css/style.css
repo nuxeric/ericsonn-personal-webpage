@@ -13,6 +13,14 @@ body{
     font-size: 1.5rem;
 }
 
+#landing-page-icons a {
+    color: #545454;
+}
+
+#landing-page-icons a:hover {
+    color: #0056b3;
+}
+
 #hello-world-typing-h {
 }
 
@@ -76,6 +84,14 @@ body{
 
 #bitmoji-crying-image {
     max-width: 100%;
+}
+
+#footer-links a {
+    color: #545454;
+}
+
+#footer-links a:hover {
+    color: #0056b3;
 }
 
 @media screen and (max-width: 992px) {
